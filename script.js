@@ -1,11 +1,11 @@
 const products=[
-{id:1,name:"طقم شاي خزفي ملون",price:0,cat:"sets",img:"images/product-1.jpg",desc:"طقم مغربي مزخرف بألوان زاهية وتفاصيل تقليدية."},
-{id:2,name:"طقم خزفي أزرق وأبيض",price:400,cat:"sets",img:"images/product-2.jpg",desc:"تصميم أزرق وأبيض مستوحى من الزخرفة المغربية."},
-{id:3,name:"موزع ماء خزفي أخضر",price:389,cat:"dispenser",img:"images/product-3.jpg",desc:"موزع ماء خزفي بلمسة خضراء وزخارف يدوية."},
-{id:4,name:"موزع ماء خزفي بني",price:389,cat:"dispenser",img:"images/product-4.jpg",desc:"موزع أنيق بلون بني وزخارف نباتية."},
-{id:5,name:"أواني خزفية متنوعة",price:0,cat:"sets",img:"images/product-5.jpg",desc:"مجموعة من الأواني المغربية المزخرفة بألوان متعددة."},
-{id:6,name:"طقم خزفي أزرق مزخرف",price:435,cat:"decor",img:"images/product-6.jpg",desc:"قطعة خزفية مميزة للضيافة والديكور."},
-{id:7,name:"أكواب شاي خزفية",price:0,cat:"cups",img:"images/product-7.jpg",desc:"أكواب شاي مغربية مزخرفة مع الصحون."}
+{id:1,name:"طقم شاي خزفي ملون",price:0,cat:"sets",Img:"Images/product-1.jpg",desc:"طقم مغربي مزخرف بألوان زاهية وتفاصيل تقليدية."},
+{id:2,name:"طقم خزفي أزرق وأبيض",price:400,cat:"sets",Img:"Images/product-2.jpg",desc:"تصميم أزرق وأبيض مستوحى من الزخرفة المغربية."},
+{id:3,name:"موزع ماء خزفي أخضر",price:389,cat:"dispenser",Img:"Images/product-3.jpg",desc:"موزع ماء خزفي بلمسة خضراء وزخارف يدوية."},
+{id:4,name:"موزع ماء خزفي بني",price:389,cat:"dispenser",Img:"Images/product-4.jpg",desc:"موزع أنيق بلون بني وزخارف نباتية."},
+{id:5,name:"أواني خزفية متنوعة",price:0,cat:"sets",Img:"Images/product-5.jpg",desc:"مجموعة من الأواني المغربية المزخرفة بألوان متعددة."},
+{id:6,name:"طقم خزفي أزرق مزخرف",price:435,cat:"decor",Img:"Images/product-6.jpg",desc:"قطعة خزفية مميزة للضيافة والديكور."},
+{id:7,name:"أكواب شاي خزفية",price:0,cat:"cups",Img:"Images/product-7.jpg",desc:"أكواب شاي مغربية مزخرفة مع الصحون."}
 ];
 
 let cart=JSON.parse(localStorage.getItem("amazingKhazafCart")||"[]");
