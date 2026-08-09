@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Amazing Khazaf - خزف مغربي أصيل">
+<title>Amazing Khazaf | الخزف المغربي</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">🏺 Amazing Khazaf</a>
+    <button class="cart-btn" onclick="toggleCart()">🛒 السلة <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <p class="eyebrow">AMAZING KHAZAF • صناعة مغربية</p>
+      <h1>الخزف المغربي<br>بلمسة أصيلة</h1>
+      <p>قطع خزفية مزخرفة بعناية، تجمع بين الحرفية المغربية والجمال التقليدي.</p>
+      <a href="#products" class="primary">تصفح المنتجات</a>
+    </div>
+    <img class="hero-photo" src="images/product-5.jpg" alt="منتجات خزفية مغربية">
+  </div>
+</section>
+
+<section class="features">
+  <div class="container features-grid">
+    <div>🇲🇦<strong>صناعة مغربية</strong><span>تصاميم بطابع مغربي</span></div>
+    <div>✨<strong>قطع مميزة</strong><span>اختيارات للبيت والهدايا</span></div>
+    <div>📦<strong>طلب سهل</strong><span>تواصل مباشر عبر واتساب</span></div>
+  </div>
+</section>
+
+<main class="container">
+  <section class="section-head" id="products">
+    <div><p class="eyebrow">منتجاتنا</p><h2>اختار القطعة اللي عجباتك</h2></div>
+    <select id="category" onchange="renderProducts()">
+      <option value="all">كل المنتجات</option>
+      <option value="sets">طقم وأواني</option>
+      <option value="dispenser">موزعات الماء</option>
+      <option value="decor">ديكور</option>
+      <option value="cups">أكواب</option>
+    </select>
+  </section>
+  <div id="productsGrid" class="products"></div>
+</main>
+
+<div id="overlay" class="overlay" onclick="toggleCart()"></div>
+<aside id="cart" class="cart">
+  <div class="cart-head"><h2>سلة المشتريات</h2><button onclick="toggleCart()">✕</button></div>
+  <div id="cartItems"></div>
+  <div class="total">المجموع: <strong><span id="total">0</span> درهم</strong></div>
+  <button class="primary full" onclick="checkout()">إرسال الطلب عبر واتساب</button>
+</aside>
+
+<footer>
+  <div class="container footer-inner">
+    <div><h3>Amazing Khazaf</h3><p>الخزف المغربي الأصيل، مباشرة إلى باب دارك.</p></div>
+    <div><h3>تواصل معنا</h3><p>واتساب: 0705667131</p></div>
+  </div>
+  <div class="copyright">© 2026 Amazing Khazaf</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
